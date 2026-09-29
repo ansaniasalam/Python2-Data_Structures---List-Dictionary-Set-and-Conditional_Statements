@@ -20,4 +20,4 @@ The score categorizer prompts for a score from 0 to 10 and uses `if`, `elif`, an
 
 ## Open the Notebook
 
-Open the Python2-Data_Structures - List-Dictionary-Set-and-Conditional_Statements.ipynb file in Jupyter Notebook or JupyterLab and run the cells to view the examples.
+Open the Python2-Data_Structures-List-Dictionary-Set-and-Conditional_Statements.ipynb file in Jupyter Notebook or JupyterLab and run the cells to view the examples.
