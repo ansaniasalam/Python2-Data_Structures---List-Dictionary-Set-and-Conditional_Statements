@@ -74,5 +74,5 @@ Open the notebook in Jupyter Notebook or JupyterLab and run the cells in order.
 To run it from a terminal instead, execute the notebook with:
 
 ```bash
-jupyter nbconvert --to notebook --execute "Python2.Data_Structures-List_Dictionary_Set_Conditionals.ipynb"
+jupyter nbconvert --to notebook --execute "Python2.Data_Structures-List,Dictionary,Set&Conditional_Statements.ipynb"
 ```
