@@ -1,23 +1,78 @@
-# Data Structures: List, Dictionary, Set and Conditional Statements
+# Data Structures - Lists, Dictionaries, Sets and Conditional Statements
 
-This Jupyter Notebook contains hands-on Python programming with lists, dictionaries, sets, and conditional statements. It demonstrates how to create and modify data structures, access their contents, perform common operations, and categorize a score using conditional logic.
+This Jupyter notebook contains hands-on Python exercises with lists, dictionaries and sets, along with decision-making using conditional statements. It demonstrates how to create, modify and access these collections, perform set operations, and categorize user input using if-elif-else logic.
 
-## Lists
+## Concepts Used
 
-The list examples create age and name lists, then demonstrate how to append, insert, remove, pop, and extend elements. The ages are sorted in descending order, and the maximum, minimum, and sum are calculated. Indexing and slicing display the first and last names, a range of names, and the names in reverse order.
+### Lists
+Ordered, mutable collections created with `[]`. They can hold duplicate values and elements can be changed after creation.
 
-## Dictionaries
+### append() Method
+Adds a single element to the end of a list.
 
-A `student_marks` dictionary maps five student names to their marks. The examples access a student's mark, add a new student, update an existing mark, and use `keys()`, `values()`, and `items()` to display the dictionary's contents.
+### insert() Method
+Adds an element at a specific index, shifting the existing elements to the right.
 
-## Sets
+### remove() Method
+Deletes the first occurrence of a given value from a list.
 
-The set examples show that duplicate values are stored only once. They demonstrate why set elements cannot be accessed or changed by index, and how to calculate the union and intersection of two sets.
+### pop() Method
+Removes and returns an element from a list. By default it removes the last element.
 
-## Conditional Statements
+### extend() Method
+Adds all elements of another list to the end of the existing list, instead of adding the list as a single item.
 
-The score categorizer prompts for a score from 0 to 10 and uses `if`, `elif`, and `else` to identify the result as Above Average, Average, or Below Average. Each category displays a short feedback message.
+### sort() Method
+Arranges list elements in order. Using `reverse=True` sorts in descending order. It modifies the list in place.
 
-## Open the Notebook
+### max(), min() and sum()
+Built-in functions that return the largest value, the smallest value and the total of a numeric list.
 
-Open the Python2-Data_Structures-List-Dictionary-Set-and-Conditional_Statements.ipynb file in Jupyter Notebook or JupyterLab and run the cells to view the examples.
+### List Indexing and Slicing
+Positive indexes start at `0` and negative indexes start at `-1` from the end. Slicing with `[start:stop]` excludes the stop index, and `[::-1]` reverses the list.
+
+### Dictionaries
+Collections of key-value pairs created with `{}`. Keys must be unique and are used to access values.
+
+### Accessing Dictionary Values
+A value is retrieved by using its key, e.g. `student_marks["Anu"]`.
+
+### Adding and Updating Dictionary Entries
+Assigning a value to a new key adds a new entry, while assigning to an existing key updates its value.
+
+### keys(), values() and items()
+Return all keys, all values and all key-value pairs of a dictionary respectively.
+
+### Sets
+Unordered collections of unique elements created with `{}` or `set()`. Duplicate values are automatically removed.
+
+### Set Immutability of Position
+Sets are unordered, so they do not support indexing. Trying `my_set[4] = 's'` raises a `TypeError` because elements have no fixed position.
+
+### Union and Intersection
+`union()` (or `|`) combines all unique elements from both sets, while `intersection()` (or `&`) returns only the elements common to both.
+
+### User Input and Type Conversion
+`input()` reads text from the user, and `int()` or `float()` converts it to a number so it can be compared.
+
+### Comparison and Logical Operators
+Operators such as `>`, `<`, `>=`, `<=` and `and` are used to build conditions, e.g. `4 <= score <= 7`.
+
+### if-elif-else Statements
+Execute different blocks of code depending on which condition is true. Conditions are checked from top to bottom and only the first matching block runs.
+
+### Input Validation
+Checks that the score lies between 0 and 10 (inclusive) before categorizing it.
+
+### print() Function
+Displays labelled output for readability.
+
+## Running the Code
+
+Open the notebook in Jupyter Notebook or JupyterLab and run the cells in order.
+
+To run it from a terminal instead, execute the notebook with:
+
+```bash
+jupyter nbconvert --to notebook --execute "Python2.Data_Structures-List_Dictionary_Set_Conditionals.ipynb"
+```
